@@ -55,8 +55,8 @@
                             <div class="collapse navbar-collapse justify-content-center" id="hamburgernavmenucontent">
                                 <ul class="navbar-nav align-items-lg-center">
 
-                                    <li class="nav-item"><a href="about.html">FORMULIR LAPORAN</a></li>
-                                    <li class="nav-item"><a href="about.html">CEK STATUS LAPORAN</a></li>
+                                    <li class="nav-item"><a href="{{route('landing')}}">FORMULIR LAPORAN</a></li>
+                                    <li class="nav-item"><a href="{{route('landing_cek')}}">CEK STATUS LAPORAN</a></li>
 
                                 </ul>
                             </div>

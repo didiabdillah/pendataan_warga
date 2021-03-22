@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'FormController@index');
+Route::get('/', 'LandingController@index')->name('landing');
+
+Route::get('/cek', 'LandingController@cek')->name('landing_cek');
