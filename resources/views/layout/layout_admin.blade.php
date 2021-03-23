@@ -13,7 +13,7 @@
 
     <!-- CODE SETTING FAVICON DAN LOGO JANGAN DI UBAH -->
     <!-- Favicon -->
-    <link rel="icon" type="ico" href="{{URL::asset('assets/img/favicon/favicon.ico')}}">
+    <link rel="icon" type="ico" href="{{URL::asset('assets/img/favicon/fav.ico')}}">
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -88,7 +88,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="{{url('/home')}}" class="brand-link">
+            <a href="{{url('/')}}" class="brand-link">
                 <img src="{{URL::asset('assets/img/logo/logo.png')}}" alt="" class="brand-image img-circle elevation-3" style="opacity: 1;">
                 <span class="brand-text font-weight-light">Pendataan</span>
             </a>
@@ -120,7 +120,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{route('report')}}" class="nav-link @if(Request::segment(1) == 'report' || Request::segment(2) == 'report') {{'active'}} @endif">
-                                <i class="nav-icon fas fa-globe"></i>
+                                <i class="nav-icon fas fa-file-alt"></i>
                                 <p>
                                     Laporan
                                 </p>

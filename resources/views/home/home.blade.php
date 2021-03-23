@@ -14,7 +14,7 @@
 
             <div class="row mb-2 content-header">
                 <div class="col-sm-12">
-                    <h1>Home</h1>
+                    <h1>Beranda</h1>
                 </div>
             </div>
 

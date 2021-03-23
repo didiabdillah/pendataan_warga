@@ -1,4 +1,4 @@
-@extends('Templates.layout_user')
+@extends('layout.layout_user')
 
 @section('title', 'Cek')
 

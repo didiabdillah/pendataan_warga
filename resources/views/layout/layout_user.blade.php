@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{{URL::asset('assets/user/images/favicon.png')}}">
+    <link rel="shortcut icon" type="image/png" href="{{URL::asset('assets/img/favicon/fav.ico')}}">
     <!-- Custom Fonts Css -->
     <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/custom_fonts/fonts.css')}}">
     <!-- Bootstrap Css -->
@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-md-3 col-lg-2">
-                        <a class="navbar-brand" href="index-2.html"><img src="{{URL::asset('assets/user/images/home-two-logo.png')}}" alt="Logo" /></a>
+                        <a class="navbar-brand" href="index-2.html"><img src="{{URL::asset('assets/img/logo/logo.png')}}" alt="Logo" style="height: 80px;" /></a>
                     </div>
                     <div class="col-12 col-md-9 col-lg-8 d-flex justify-content-lg-center justify-content-end">
                         <nav class="navbar navbar-expand-md">

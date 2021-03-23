@@ -12,7 +12,7 @@
 
   <!-- CODE SETTING FAVICON DAN LOGO JANGAN DI UBAH -->
   <!-- Favicon -->
-  <link rel="icon" type="ico" href="{{URL::asset('assets/img/favicon/favicon.ico')}}">
+  <link rel="icon" type="ico" href="{{URL::asset('assets/img/favicon/fav.ico')}}">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
