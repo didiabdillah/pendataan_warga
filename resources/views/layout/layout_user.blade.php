@@ -63,7 +63,7 @@
                         </nav>
                     </div>
                     <div class="col-md-0 col-lg-2 d-flex align-items-center justify-content-end">
-                        <a href="contact.html" class="btn ms-dark-btn d-none d-lg-block"><i class="fas fa-user"></i></a>
+                        <a href="{{route('login')}}" class="btn ms-dark-btn d-none d-lg-block"><i class="fas fa-user"></i></a>
                     </div>
                 </div>
             </div>
