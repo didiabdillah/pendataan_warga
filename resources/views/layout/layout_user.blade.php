@@ -9,21 +9,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{{URL::asset('assets/images/favicon.png')}}">
+    <link rel="shortcut icon" type="image/png" href="{{URL::asset('assets/user/images/favicon.png')}}">
     <!-- Custom Fonts Css -->
-    <link rel="stylesheet" href="{{URL::asset('assets/vendor/custom_fonts/fonts.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/custom_fonts/fonts.css')}}">
     <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="{{URL::asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/bootstrap/css/bootstrap.min.css')}}">
     <!-- Font Awesome Css -->
-    <link rel="stylesheet" href="{{URL::asset('assets/vendor/fontawesome/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/fontawesome/css/all.min.css')}}">
     <!-- Elegant Icons Css -->
-    <link rel="stylesheet" href="{{URL::asset('assets/vendor/elegant/css/style.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/elegant/css/style.css')}}">
     <!-- Owl Carousel Css -->
-    <link rel="stylesheet" href="{{URL::asset('assets/vendor/owl_carousel/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('assets/vendor/owl_carousel/css/owl.theme.default.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/owl_carousel/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/vendor/owl_carousel/css/owl.theme.default.css')}}">
     <!-- Custom Style Css -->
-    <link rel="stylesheet" href="{{URL::asset('assets/css/style.css')}}">
-    <link rel="stylesheet" href="{{URL::asset('assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/css/style.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/user/css/responsive.css')}}">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-md-3 col-lg-2">
-                        <a class="navbar-brand" href="index-2.html"><img src="{{URL::asset('assets/images/home-two-logo.png')}}" alt="Logo" /></a>
+                        <a class="navbar-brand" href="index-2.html"><img src="{{URL::asset('assets/user/images/home-two-logo.png')}}" alt="Logo" /></a>
                     </div>
                     <div class="col-12 col-md-9 col-lg-8 d-flex justify-content-lg-center justify-content-end">
                         <nav class="navbar navbar-expand-md">
@@ -72,17 +72,17 @@
         @yield('page')
 
         <!-- General Js -->
-        <script src="{{URL::asset('assets/js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{URL::asset('assets/user/js/jquery-3.2.1.min.js')}}"></script>
         <!-- Bootstrap Js -->
-        <script src="{{URL::asset('assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{URL::asset('assets/user/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
         <!-- Font Awesome Js -->
-        <script src="{{URL::asset('assets/vendor/fontawesome/js/all.min.js')}}"></script>
+        <script src="{{URL::asset('assets/user/vendor/fontawesome/js/all.min.js')}}"></script>
         <!-- Elegant Icons Css -->
-        <script src="{{URL::asset('assets/vendor/elegant/js/lte-ie7.js')}}"></script>
+        <script src="{{URL::asset('assets/user/vendor/elegant/js/lte-ie7.js')}}"></script>
         <!-- Owl Carousel Js -->
-        <script src="{{URL::asset('assets/vendor/owl_carousel/js/owl.carousel.min.js')}}"></script>
+        <script src="{{URL::asset('assets/user/vendor/owl_carousel/js/owl.carousel.min.js')}}"></script>
         <!-- Themes's Custom Js -->
-        <script src="{{URL::asset('assets/js/theme.js')}}"></script>
+        <script src="{{URL::asset('assets/user/js/theme.js')}}"></script>
 
     </div> <!-- Body Wrapper Ends -->
 

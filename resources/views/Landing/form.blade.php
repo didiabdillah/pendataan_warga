@@ -1,4 +1,4 @@
-@extends('Templates.layout_user')
+@extends('layout.layout_user')
 
 @section('title', 'Pendataan')
 
@@ -28,17 +28,17 @@
                     <h2 class="font-weight-bold mb-5">Live Update</h2>
                 </div>
                 <div class="col-md-4 text-center mb-5 mb-md-0">
-                    <img src="{{URL::asset('assets/images/icon-01.png')}}" class="img-fluid" alt="Icon">
+                    <img src="{{URL::asset('assets/user/images/icon-01.png')}}" class="img-fluid" alt="Icon">
                     <p class="font-weight-bold mt-3 mb-0">Confirmed Cases</p>
                     <span class="font-weight-bold blue-text">245,850</span>
                 </div>
                 <div class="col-md-4 text-center mb-5 mb-md-0">
-                    <img src="{{URL::asset('assets/images/icon-02.png')}}" class="img-fluid" alt="Icon">
+                    <img src="{{URL::asset('assets/user/images/icon-02.png')}}" class="img-fluid" alt="Icon">
                     <p class="font-weight-bold mt-3 mb-0">Confirmed Cases</p>
                     <span class="font-weight-bold green-text">88,441</span>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="{{URL::asset('assets/images/icon-03.png')}}" class="img-fluid" alt="Icon">
+                    <img src="{{URL::asset('assets/user/images/icon-03.png')}}" class="img-fluid" alt="Icon">
                     <p class="font-weight-bold mt-3 mb-0">Confirmed Cases</p>
                     <span class="font-weight-bold red-text">10,047</span>
                 </div>
@@ -126,7 +126,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-7 mx-2 mx-md-auto">
-                    <img src="{{URL::asset('assets/images/home2-man-with-icon.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-man-with-icon.png')}}" class="img-fluid" alt="Image">
                 </div>
                 <div class="col-lg-5 mt-4 mt-lg-0">
                     <div class="text-one">
@@ -168,37 +168,37 @@
             <div class="ms-spacer-30"></div>
             <div class="row home2-special-pad">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="{{URL::asset('assets/images/home2-protect-01.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-protect-01.png')}}" class="img-fluid" alt="Image">
                     <h5 class="font-weight-bold text-white mt-3">Stay at home</h5>
                 </div>
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="{{URL::asset('assets/images/home2-protect-02.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-protect-02.png')}}" class="img-fluid" alt="Image">
                     <h5 class="font-weight-bold text-white mt-3">Avoid close contact</h5>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="{{URL::asset('assets/images/home2-protect-03.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-protect-03.png')}}" class="img-fluid" alt="Image">
                     <h5 class="font-weight-bold text-white mt-3">Clean and disinfect</h5>
                 </div>
             </div>
             <div class="ms-spacer-30"></div>
             <div class="row home2-special-pad">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="{{URL::asset('assets/images/home2-protect-04.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-protect-04.png')}}" class="img-fluid" alt="Image">
                     <h5 class="font-weight-bold text-white mt-3">Cover cough</h5>
                 </div>
                 <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <img src="{{URL::asset('assets/images/home2-protect-05.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-protect-05.png')}}" class="img-fluid" alt="Image">
                     <h5 class="font-weight-bold text-white mt-3">Wear a mask</h5>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="{{URL::asset('assets/images/home2-protect-06.png')}}" class="img-fluid" alt="Image">
+                    <img src="{{URL::asset('assets/user/images/home2-protect-06.png')}}" class="img-fluid" alt="Image">
                     <h5 class="font-weight-bold text-white mt-3">Clean you hands often</h5>
                 </div>
             </div>
         </div>
     </div>
     <div class="side-image">
-        <img src="{{URL::asset('assets/images/home2-protect-img.png')}}" class="img-fluid" alt="Image">
+        <img src="{{URL::asset('assets/user/images/home2-protect-img.png')}}" class="img-fluid" alt="Image">
     </div>
 </section>
 
