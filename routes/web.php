@@ -37,17 +37,18 @@ Route::group(['middleware' => ['prevent_Back_Button']], function () {
 Route::group(['middleware' => ['prevent_Back_Button']], function () {
     Route::group(['middleware' => ['is_Login']], function () {
         Route::get('/home', 'HomeController@index')->name('home');
+        Route::post('/home/chart', 'HomeController@chart')->name('home_chart');
 
         Route::get('/report', 'ReportController@index')->name('report');
-    });
 
-    //Profile
-    Route::group(['prefix' => 'u'], function () {
-        Route::get('/{id}', 'ProfileController@index')->name('profile');
-        Route::get('/{id}/setting', 'ProfileController@setting')->name('profile_setting');
-        Route::patch('/{id}/setting', 'ProfileController@profile_update')->name('profile_setting_update');
-        Route::put('/{id}/setting', 'ProfileController@password_update')->name('profile_setting_update_password');
-        Route::patch('/{id}/setting/picture', 'ProfileController@picture_update')->name('profile_setting_update_picture');
+        //Profile
+        Route::group(['prefix' => 'u'], function () {
+            Route::get('/{id}', 'ProfileController@index')->name('profile');
+            Route::get('/{id}/setting', 'ProfileController@setting')->name('profile_setting');
+            Route::patch('/{id}/setting', 'ProfileController@profile_update')->name('profile_setting_update');
+            Route::put('/{id}/setting', 'ProfileController@password_update')->name('profile_setting_update_password');
+            Route::patch('/{id}/setting/picture', 'ProfileController@picture_update')->name('profile_setting_update_picture');
+        });
     });
 });
 
