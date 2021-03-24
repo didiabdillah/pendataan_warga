@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-md-3 col-lg-2">
-                        <a class="navbar-brand" href="index-2.html"><img src="{{URL::asset('assets/img/logo/logo.png')}}" alt="Logo" style="height: 80px;" /></a>
+                        <a class="navbar-brand" href="{{route('landing')}}"><img src="{{URL::asset('assets/img/logo/logo.png')}}" alt="Logo" style="height: 75px;" /></a>
                     </div>
                     <div class="col-12 col-md-9 col-lg-8 d-flex justify-content-lg-center justify-content-end">
                         <nav class="navbar navbar-expand-md">
@@ -83,6 +83,11 @@
         <script src="{{URL::asset('assets/user/vendor/owl_carousel/js/owl.carousel.min.js')}}"></script>
         <!-- Themes's Custom Js -->
         <script src="{{URL::asset('assets/user/js/theme.js')}}"></script>
+        <!-- Swetalert -->
+        <script src="{{URL::asset('assets/admin/js/sweetalert2/sweetalert2.all.min.js')}}"></script>
+        <!-- Own Script -->
+        <script src="{{URL::asset('assets/admin/js/ScriptSweetalert2.js')}}"></script>
+        @stack('script')
 
     </div> <!-- Body Wrapper Ends -->
 

@@ -2,6 +2,8 @@
 
 @section('title', 'Cek')
 
+@include('layout.flash_alert')
+
 @section('page')
 
 <!-- Banner Section -->
@@ -21,11 +23,12 @@
 <div class="ms-spacer-60"></div>
 <section id="home-two-corona-symptom" class="pad-100">
     <div class="container">
-        <form class="form-group mb-0">
+        <form class="form-group mb-0" method="GET" action="">
+            @csrf
             <div class="row">
                 <div class="col-md-10">
                     <div class="form-group position-relative mb-0">
-                        <input type="text" placeholder="Masukan No NIK atau No KTP...">
+                        <input type="text" placeholder="Masukan No NIK atau No KTP..." name="nik" id="nik">
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -37,8 +40,10 @@
     </div>
 </section>
 
+@if($result)
 <!-- Content Area -->
 <section id="ms-cart-sec" class="">
+    @foreach($result as $data)
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-12">
@@ -51,7 +56,7 @@
                 <h5 class="font-weight-bold"> : </h5>
             </div>
             <div class="col-7 col-md-7 col-lg-7">
-                <h5 class="font-weight-bold">14843943493434</h5>
+                <h5 class="font-weight-bold">{{$data->report_nik}}</h5>
             </div>
             <div class="col-md-12">
                 <div class="ms-seperator"></div>
@@ -65,7 +70,7 @@
                 <h5 class="font-weight-bold"> : </h5>
             </div>
             <div class="col-7 col-md-7 col-lg-7">
-                <h5 class="font-weight-bold">Didi Abdillah</h5>
+                <h5 class="font-weight-bold">{{$data->report_name}}</h5>
             </div>
             <div class="col-md-12">
                 <div class="ms-seperator"></div>
@@ -79,12 +84,20 @@
                 <h5 class="font-weight-bold"> : </h5>
             </div>
             <div class="col-7 col-md-7 col-lg-7">
-                <h5 class="font-weight-bold">Laki-Laki</h5>
+                <h5 class="font-weight-bold">
+                    @if($data->report_sex == 0)
+                    {{'Laki-Laki'}}
+                    @else
+                    {{'Perempuan'}}
+                    @endif
+                </h5>
             </div>
             <div class="col-md-12">
                 <div class="ms-seperator"></div>
             </div>
         </div>
+
+        {{--
         <div class="row align-items-center">
             <div class="col-4 col-md-4 col-lg-4">
                 <h5 class="font-weight-bold">Tempat Lahir</h5>
@@ -155,9 +168,11 @@
                 <div class="ms-seperator"></div>
             </div>
         </div>
-
+        --}}
     </div>
+    @endforeach
 </section>
+@endif
 
 <!-- Footer Section -->
 <div class="ms-spacer-60"></div>

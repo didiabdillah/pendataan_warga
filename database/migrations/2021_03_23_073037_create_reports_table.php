@@ -17,7 +17,7 @@ class CreateReportsTable extends Migration
             $table->bigIncrements('report_id');
             $table->string('report_nik', 16);
             $table->string('report_name', 255);
-            $table->string('report_sex', 20);
+            $table->boolean('report_sex');
 
             $table->timestamps();
         });

@@ -2,6 +2,8 @@
 
 @section('title', 'Pendataan')
 
+@include('layout.flash_alert')
+
 @section('page')
 
 <!-- Banner Section -->
@@ -48,35 +50,36 @@
 </section>
 
 <!-- Symptoms Section -->
-<section id="home-two-corona-symptom" class="pad-100">
+<section id="form" class="pad-100">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="hero-text">Formulir Laporan</h1>
                 <h4 class="font-weight-bold">Silahkan Isi Formulir Dibawah Ini</h4>
                 <div class="ms-spacer-40"></div>
-                <form method="POST">
+                <form method="POST" action="{{route('landing_form_process')}}">
+                    @csrf
                     <div class="row">
                         <div class="form-group col-12">
-                            <input type="text" required="">
+                            <input type="text" name="nik" id="nik">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>No. NIK/KTP</label>
                         </div>
                         <div class="form-group col-12">
-                            <input type="text" required="">
+                            <input type="text" name="name" id="name">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Nama Lengkap (Sesuai KTP)</label>
                         </div>
                         <div class="form-group col-12">
-                            <select id="inputState">
-                                <option selected>--Jenis Kelamin--</option>
-                                <option>Laki-Laki</option>
-                                <option>Perempuan</option>
+                            <select name="sex" id="sex">
+                                <option value="">--Jenis Kelamin--</option>
+                                <option value="0">Laki-Laki</option>
+                                <option value="1">Perempuan</option>
                             </select>
                         </div>
-                        <div class="form-group col-12">
+                        <!-- <div class="form-group col-12">
                             <input type="text" required="">
                             <span class="highlight"></span>
                             <span class="bar"></span>
@@ -105,7 +108,7 @@
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Pekerjaan</label>
-                        </div>
+                        </div> -->
                         <div class="mt-2 form-group col-md-12">
                             <button type="submit" class="btn ms-primary-btn">KIRIM LAPORAN</button>
                         </div>
@@ -239,3 +242,15 @@
 </div> <!-- Body Wrapper Ends -->
 
 @endsection
+
+@push('script')
+{{--
+<script>
+    $(function() {
+        $('#form').animate({
+            scrollTop: $('#form').get(0).scrollHeight
+        }, 50);
+    });
+</script>
+--}}
+@endpush
