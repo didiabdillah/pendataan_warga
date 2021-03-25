@@ -7,6 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>@yield('title')</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="{{URL::asset('assets/img/favicon/fav.ico')}}">
@@ -87,6 +91,7 @@
         <script src="{{URL::asset('assets/admin/js/sweetalert2/sweetalert2.all.min.js')}}"></script>
         <!-- Own Script -->
         <script src="{{URL::asset('assets/admin/js/ScriptSweetalert2.js')}}"></script>
+
         @stack('script')
 
     </div> <!-- Body Wrapper Ends -->

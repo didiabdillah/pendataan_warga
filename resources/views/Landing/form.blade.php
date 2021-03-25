@@ -27,22 +27,22 @@
         <div class="live-update bg-white">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="font-weight-bold mb-5">Live Update</h2>
+                    <h2 class="font-weight-bold mb-5">Perkembangan Kasus Covid-19 Di Indonesia</h2>
                 </div>
                 <div class="col-md-4 text-center mb-5 mb-md-0">
                     <img src="{{URL::asset('assets/user/images/icon-01.png')}}" class="img-fluid" alt="Icon">
-                    <p class="font-weight-bold mt-3 mb-0">Confirmed Cases</p>
-                    <span class="font-weight-bold blue-text">245,850</span>
+                    <p class="font-weight-bold mt-3 mb-0">Positif</p>
+                    <span class="font-weight-bold blue-text" id="positif">-</span>
                 </div>
                 <div class="col-md-4 text-center mb-5 mb-md-0">
                     <img src="{{URL::asset('assets/user/images/icon-02.png')}}" class="img-fluid" alt="Icon">
-                    <p class="font-weight-bold mt-3 mb-0">Confirmed Cases</p>
-                    <span class="font-weight-bold green-text">88,441</span>
+                    <p class="font-weight-bold mt-3 mb-0">Sembuh</p>
+                    <span class="font-weight-bold green-text" id="sembuh">-</span>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="{{URL::asset('assets/user/images/icon-03.png')}}" class="img-fluid" alt="Icon">
-                    <p class="font-weight-bold mt-3 mb-0">Confirmed Cases</p>
-                    <span class="font-weight-bold red-text">10,047</span>
+                    <p class="font-weight-bold mt-3 mb-0">Meninggal</p>
+                    <span class="font-weight-bold red-text" id="meninggal">-</span>
                 </div>
             </div>
         </div>
@@ -253,4 +253,40 @@
     });
 </script>
 --}}
+
+<script>
+    // Ajax setup from csrf token
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    $(function() {
+        var id = 0;
+
+        //generate Content Chart
+        $.ajax({
+            url: "{{route('landing_covid')}}",
+            method: "POST",
+            data: {
+                id: id
+            },
+
+            dataType: 'json',
+            success: function(data) {
+                $('#positif').empty();
+                $('#positif').append(data[0].positif);
+
+                $('#sembuh').empty();
+                $('#sembuh').append(data[0].sembuh);
+
+                $('#meninggal').empty();
+                $('#meninggal').append(data[0].meninggal);
+            }
+        });
+
+        return false;
+    });
+</script>
 @endpush

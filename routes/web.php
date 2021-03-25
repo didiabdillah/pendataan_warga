@@ -55,7 +55,7 @@ Route::group(['middleware' => ['prevent_Back_Button']], function () {
 
 Route::get('/', 'LandingController@index')->name('landing');
 Route::post('/', 'LandingController@store')->name('landing_form_process');
-Route::get('/data/covid', 'LandingController@covid')->name('landing_data_covid');
+Route::post('/covid', 'LandingController@covid')->name('landing_covid');
 
 Route::get('/cek', 'LandingController@cek')->name('landing_cek');
 Route::post('/cek/{nik}', 'LandingController@cek_process')->name('landing_cek_process');

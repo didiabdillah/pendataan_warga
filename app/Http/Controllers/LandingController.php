@@ -55,4 +55,13 @@ class LandingController extends Controller
 
         return view('landing.cek', ['result' => $result]);
     }
+
+    public function covid(Request $request)
+    {
+        $ch = curl_init('https://api.kawalcorona.com/indonesia');
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+        curl_exec($ch);
+        curl_close($ch);
+    }
 }
