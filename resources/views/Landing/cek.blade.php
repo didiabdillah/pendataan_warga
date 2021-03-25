@@ -177,38 +177,6 @@
 <!-- Footer Section -->
 <div class="ms-spacer-60"></div>
 <div class="ms-spacer-60"></div>
-<footer id="footer-home-two">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-lg-6 text-white align-self-center">
-                <p class="seperator-line mb-2">EMERGENCY DETAILS</p>
-                <h2 class="font-weight-bold mb-4 mb-md-0">How Can We Help?</h2>
-            </div>
-            <div class="col-md-7 col-lg-6">
-                <div class="contact-info">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="mb-2 ms-title-15">Emergency Contact</p>
-                            <h5 class="font-weight-bold mb-0"><a href="tel:+1234567890">+1 234 567 890</a></h5>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2 ms-title-15">Email us</p>
-                            <h5 class="font-weight-bold mb-0"><a href="mailto:help@coroso.com">help@coroso.com</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ms-spacer-60"></div>
 
-        <div class="row footer-bottom text-center">
-            <div class="col-md-12">
-                <p class="text-white">@ Copyright 2020 Coroso. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-</div> <!-- Body Wrapper Ends -->
 
 @endsection

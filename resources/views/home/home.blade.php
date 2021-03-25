@@ -26,6 +26,39 @@
             <div class="container-fluid">
 
                 <div class="row">
+
+                    <div class="col-md-6">
+                        <!-- small card -->
+                        <div class="small-box bg-primary">
+                            <div class="inner">
+                                <h3>{{$total_report}}</h3>
+
+                                <p>Laporan Masuk 1 Minggu Terakhir</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-md-6">
+                        <!-- small card -->
+                        <div class="small-box bg-success">
+                            <div class="inner">
+                                <h3>{{$week_report}}</h3>
+
+                                <p>Total Laporan Masuk</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                </div>
+
+
+                <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <!-- <h4 class="card-title mb-3"><strong>Submited Content Chart</strong></h4> -->

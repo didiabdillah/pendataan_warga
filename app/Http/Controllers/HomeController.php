@@ -9,7 +9,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home.home');
+        $total_report = Report::count();
+
+        $week_report = Report::whereDate('created_at', '>=', date('Y-m-d', strtotime("-6 days")))
+            ->whereDate('created_at', '<=', date('Y-m-d', strtotime("-0 days")))
+            ->count();
+
+        return view('home.home', ['total_report' => $total_report, 'week_report' => $week_report]);
     }
 
     public function chart(Request $request)

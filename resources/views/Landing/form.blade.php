@@ -124,8 +124,8 @@
     <div class="row">
         <div class="container">
             <div class="col-md-12">
-                <p class="seperator-line mb-2">VIRUS SPREAD</p>
-                <h2 class="font-weight-bold mb-3">Transmission of COVID - 19</h2>
+                <p class="seperator-line mb-2">PENYEBARAN VIRUS</p>
+                <h2 class="font-weight-bold mb-3">Penularan COVID - 19</h2>
             </div>
             <div class="row">
                 <div class="col-lg-7 mx-2 mx-md-auto">
@@ -133,22 +133,22 @@
                 </div>
                 <div class="col-lg-5 mt-4 mt-lg-0">
                     <div class="text-one">
-                        <h5 class="font-weight-bold mb-0">Air Transmission</h5>
+                        <h5 class="font-weight-bold mb-0">Melalui udara</h5>
                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="ms-spacer-30"></div>
                     <div class="text-two">
-                        <h5 class="font-weight-bold mb-0">Human Contact</h5>
+                        <h5 class="font-weight-bold mb-0">Kontak langsung manusia</h5>
                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="ms-spacer-30"></div>
                     <div class="text-three">
-                        <h5 class="font-weight-bold mb-0">Contaminated Objects</h5>
+                        <h5 class="font-weight-bold mb-0">Benda terkontaminasi</h5>
                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="ms-spacer-30"></div>
                     <div class="text-four">
-                        <h5 class="font-weight-bold mb-0">Eating Non-Veg</h5>
+                        <h5 class="font-weight-bold mb-0">Cairan dan droplet</h5>
                         <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
@@ -164,38 +164,37 @@
         <div class="protect-container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="seperator-line mb-2">PREVENTION</p>
-                    <h2 class="font-weight-bold mb-3 text-white">Protect Yourself</h2>
+                    <h2 class="font-weight-bold mb-3 text-white">Lindungi Diri Anda</h2>
                 </div>
             </div>
             <div class="ms-spacer-30"></div>
             <div class="row home2-special-pad">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
                     <img src="{{URL::asset('assets/user/images/home2-protect-01.png')}}" class="img-fluid" alt="Image">
-                    <h5 class="font-weight-bold text-white mt-3">Stay at home</h5>
+                    <h5 class="font-weight-bold text-white mt-3">Tinggal di rumah</h5>
                 </div>
                 <div class="col-md-4 text-center mb-4 mb-md-0">
                     <img src="{{URL::asset('assets/user/images/home2-protect-02.png')}}" class="img-fluid" alt="Image">
-                    <h5 class="font-weight-bold text-white mt-3">Avoid close contact</h5>
+                    <h5 class="font-weight-bold text-white mt-3">Hindari kontak dekat</h5>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="{{URL::asset('assets/user/images/home2-protect-03.png')}}" class="img-fluid" alt="Image">
-                    <h5 class="font-weight-bold text-white mt-3">Clean and disinfect</h5>
+                    <h5 class="font-weight-bold text-white mt-3">Jaga kebersihan</h5>
                 </div>
             </div>
             <div class="ms-spacer-30"></div>
             <div class="row home2-special-pad">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
                     <img src="{{URL::asset('assets/user/images/home2-protect-04.png')}}" class="img-fluid" alt="Image">
-                    <h5 class="font-weight-bold text-white mt-3">Cover cough</h5>
+                    <h5 class="font-weight-bold text-white mt-3">Jangan batuk sembarangan</h5>
                 </div>
                 <div class="col-md-4 text-center mb-4 mb-md-0">
                     <img src="{{URL::asset('assets/user/images/home2-protect-05.png')}}" class="img-fluid" alt="Image">
-                    <h5 class="font-weight-bold text-white mt-3">Wear a mask</h5>
+                    <h5 class="font-weight-bold text-white mt-3">Gunakan masker</h5>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="{{URL::asset('assets/user/images/home2-protect-06.png')}}" class="img-fluid" alt="Image">
-                    <h5 class="font-weight-bold text-white mt-3">Clean you hands often</h5>
+                    <h5 class="font-weight-bold text-white mt-3">Rajin cuci tangan</h5>
                 </div>
             </div>
         </div>
@@ -207,39 +206,7 @@
 
 <!-- Footer Section -->
 <div class="ms-spacer-60"></div>
-<footer id="footer-home-two">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-lg-6 text-white align-self-center">
-                <p class="seperator-line mb-2">EMERGENCY DETAILS</p>
-                <h2 class="font-weight-bold mb-4 mb-md-0">How Can We Help?</h2>
-            </div>
-            <div class="col-md-7 col-lg-6">
-                <div class="contact-info">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="mb-2 ms-title-15">Emergency Contact</p>
-                            <h5 class="font-weight-bold mb-0"><a href="tel:+1234567890">+1 234 567 890</a></h5>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-2 ms-title-15">Email us</p>
-                            <h5 class="font-weight-bold mb-0"><a href="mailto:help@coroso.com">help@coroso.com</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ms-spacer-60"></div>
 
-        <div class="row footer-bottom text-center">
-            <div class="col-md-12">
-                <p class="text-white">@ Copyright 2020 Coroso. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-</div> <!-- Body Wrapper Ends -->
 
 @endsection
 

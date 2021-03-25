@@ -36,10 +36,16 @@ Route::group(['middleware' => ['prevent_Back_Button']], function () {
 //ADMIN PAGE (LOGIN REQUIRED)
 Route::group(['middleware' => ['prevent_Back_Button']], function () {
     Route::group(['middleware' => ['is_Login']], function () {
-        Route::get('/home', 'HomeController@index')->name('home');
-        Route::post('/home/chart', 'HomeController@chart')->name('home_chart');
+        Route::group(['prefix' => 'home'], function () {
+            Route::get('/', 'HomeController@index')->name('home');
+            Route::post('/chart', 'HomeController@chart')->name('home_chart');
+        });
 
-        Route::get('/report', 'ReportController@index')->name('report');
+        // Report
+        Route::group(['prefix' => 'report'], function () {
+            Route::get('/', 'ReportController@index')->name('report');
+            Route::get('/print', 'ReportController@print')->name('report_print');
+        });
 
         //Profile
         Route::group(['prefix' => 'u'], function () {
