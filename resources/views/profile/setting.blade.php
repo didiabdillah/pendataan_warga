@@ -37,7 +37,7 @@
                                 </ul>
 
                                 @if($user_id == Session::get('user_id'))
-                                <button type="button" data-toggle="modal" data-target="#modal-default" class="btn btn-primary btn-block"><b><i class="fas fa-camera"></i> Upload Profile Picture</b></button>
+                                <button type="button" data-toggle="modal" data-target="#modal-default" class="btn btn-primary btn-block"><b><i class="fas fa-camera"></i> Unggah Foto Profil</b></button>
                                 @endif
                             </div>
                             <!-- /.card-body -->
@@ -50,9 +50,9 @@
                         <div class="card">
                             <div class="card-header p-2">
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item"><a class="nav-link" href="{{route('profile', 'me')}}">Profile</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{route('profile', 'me')}}">Profil</a></li>
                                     @if($user_id == Session::get('user_id'))
-                                    <li class="nav-item"><a class="nav-link active" href="#">Settings</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#">Pengaturan</a></li>
                                     @endif
                                 </ul>
                             </div><!-- /.card-header -->
@@ -68,7 +68,7 @@
                                         <!-- general form elements -->
                                         <div class="card card-success">
                                             <div class="card-header">
-                                                <h3 class="card-title">Account</h3>
+                                                <h3 class="card-title">Akun</h3>
                                             </div>
                                             <!-- /.card-header -->
                                             <!-- form start -->
@@ -77,8 +77,8 @@
                                                 @method('patch')
                                                 <div class="card-body">
                                                     <div class="form-group">
-                                                        <label for="name">Full Name</label>
-                                                        <input name="name" type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Enter name" value="{{$user->user_name}}">
+                                                        <label for="name">Nama Lengkap</label>
+                                                        <input name="name" type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Masukkan Nama Lengkap" value="{{$user->user_name}}">
                                                         @error('name')
                                                         <div class="invalid-feedback">
                                                             {{$message}}
@@ -86,8 +86,8 @@
                                                         @enderror
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="email">Email address</label>
-                                                        <input name="email" type="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Enter email" value="{{$user->user_email}}">
+                                                        <label for="email">Email</label>
+                                                        <input name="email" type="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Masukkan Alamat Email" value="{{$user->user_email}}">
                                                         @error('email')
                                                         <div class="invalid-feedback">
                                                             {{$message}}
@@ -95,8 +95,8 @@
                                                         @enderror
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="phone">Phone Number</label>
-                                                        <input name="phone" type="text" class="form-control @error('phone') is-invalid @enderror" id="phone" placeholder="Enter phone number" value="{{$user->user_phone}}">
+                                                        <label for="phone">No Telp</label>
+                                                        <input name="phone" type="text" class="form-control @error('phone') is-invalid @enderror" id="phone" placeholder="Masukkan No Telp" value="{{$user->user_phone}}">
                                                         @error('phone')
                                                         <div class="invalid-feedback">
                                                             {{$message}}
@@ -107,8 +107,8 @@
                                                 <!-- /.card-body -->
 
                                                 <div class="card-footer">
-                                                    <button type="reset" class="btn btn-danger">Cancel</button>
-                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                    <button type="reset" class="btn btn-danger">Kembali</button>
+                                                    <button type="submit" class="btn btn-primary">Simpan</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -117,7 +117,7 @@
                                         <!-- general form elements -->
                                         <div class="card card-danger">
                                             <div class="card-header">
-                                                <h3 class="card-title">Change Password</h3>
+                                                <h3 class="card-title">Ubah Kata Sandi</h3>
                                             </div>
                                             <!-- /.card-header -->
                                             <!-- form start -->
@@ -126,8 +126,8 @@
                                                 @method('put')
                                                 <div class="card-body">
                                                     <div class="form-group">
-                                                        <label for="old_password">Old Password</label>
-                                                        <input type="password" class="form-control @error('old_password') is-invalid @enderror" name="old_password" id="old_password" placeholder="Enter old password">
+                                                        <label for="old_password">Kata Sandi Saat Ini</label>
+                                                        <input type="password" class="form-control @error('old_password') is-invalid @enderror" name="old_password" id="old_password" placeholder="Masukkan Kata Sandi Saat Ini">
                                                         @error('old_password')
                                                         <div class="invalid-feedback">
                                                             {{$message}}
@@ -135,8 +135,8 @@
                                                         @enderror
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="new_password">New Password</label>
-                                                        <input type="password" class="form-control @error('new_password') is-invalid @enderror" name="new_password" id="new_password" placeholder="Enter new password">
+                                                        <label for="new_password">Kata Sandi Baru</label>
+                                                        <input type="password" class="form-control @error('new_password') is-invalid @enderror" name="new_password" id="new_password" placeholder="Masukkan Kata Sandi Baru">
                                                         @error('new_password')
                                                         <div class="invalid-feedback">
                                                             {{$message}}
@@ -144,8 +144,8 @@
                                                         @enderror
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="confirm_password">Confirm New Password</label>
-                                                        <input type="password" class="form-control @error('confirm_password') is-invalid @enderror" name="confirm_password" id="confirm_password" placeholder="Enter confirm password">
+                                                        <label for="confirm_password">Konfirmasi Kata Sandi Baru</label>
+                                                        <input type="password" class="form-control @error('confirm_password') is-invalid @enderror" name="confirm_password" id="confirm_password" placeholder="Masukkan Konfirmasi Kata Sandi Baru">
                                                         @error('confirm_password')
                                                         <div class="invalid-feedback">
                                                             {{$message}}
@@ -156,8 +156,8 @@
                                                 <!-- /.card-body -->
 
                                                 <div class="card-footer">
-                                                    <button type="reset" class="btn btn-danger">Cancel</button>
-                                                    <button type="submit" class="btn btn-primary">Change</button>
+                                                    <button type="reset" class="btn btn-danger">Kembali</button>
+                                                    <button type="submit" class="btn btn-primary">Ubah</button>
                                                 </div>
                                             </form>
                                         </div>

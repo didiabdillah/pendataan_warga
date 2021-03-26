@@ -79,18 +79,18 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-lg-6 text-white align-self-center">
-                        <p class="seperator-line mb-2">EMERGENCY DETAILS</p>
-                        <h2 class="font-weight-bold mb-4 mb-md-0">How Can We Help?</h2>
+                        <p class="seperator-line mb-2">DETAIL DARURAT</p>
+                        <h2 class="font-weight-bold mb-4 mb-md-0">Bagaimana Kami Dapat Membantu?</h2>
                     </div>
                     <div class="col-md-7 col-lg-6">
                         <div class="contact-info">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <p class="mb-2 ms-title-15">Emergency Contact</p>
+                                    <p class="mb-2 ms-title-15">Kontak Darurat</p>
                                     <h5 class="font-weight-bold mb-0"><a href="tel:+1234567890">+1 234 567 890</a></h5>
                                 </div>
                                 <div class="col-md-6">
-                                    <p class="mb-2 ms-title-15">Email us</p>
+                                    <p class="mb-2 ms-title-15">Email Kami</p>
                                     <h5 class="font-weight-bold mb-0"><a href="mailto:help@coroso.com">help@coroso.com</a></h5>
                                 </div>
                             </div>

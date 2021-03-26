@@ -134,22 +134,22 @@
                 <div class="col-lg-5 mt-4 mt-lg-0">
                     <div class="text-one">
                         <h5 class="font-weight-bold mb-0">Melalui udara</h5>
-                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="mb-0">WHO mengakui adanya bukti bahwa virus Corona bisa menyebar melalui partikel kecil yang melayang di udara.</p>
                     </div>
                     <div class="ms-spacer-30"></div>
                     <div class="text-two">
-                        <h5 class="font-weight-bold mb-0">Kontak langsung manusia</h5>
-                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h5 class="font-weight-bold mb-0">Kontak dekat dengan pasien</h5>
+                        <p class="mb-0">Keluarga, petugas medis, atau bahkan orang yang sempat berada dekat dengan pasien rentan untuk tertular.</p>
                     </div>
                     <div class="ms-spacer-30"></div>
                     <div class="text-three">
                         <h5 class="font-weight-bold mb-0">Benda terkontaminasi</h5>
-                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="mb-0">Penularan terjadi saat seseorang menyentuh permukaan telah terkontaminasi virus dari orang yang batuk atau bersin.</p>
                     </div>
                     <div class="ms-spacer-30"></div>
                     <div class="text-four">
                         <h5 class="font-weight-bold mb-0">Cairan dan droplet</h5>
-                        <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="mb-0">Penularan terjadi melalui droplet saat seseorang batuk, bersin, bernyanyi, berbicara, hingga bernapas. </p>
                     </div>
                 </div>
             </div>

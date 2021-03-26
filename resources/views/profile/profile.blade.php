@@ -36,7 +36,7 @@
                                     </li>
                                 </ul>
                                 @if($user_id == Session::get('user_id'))
-                                <button type="button" data-toggle="modal" data-target="#modal-default" class="btn btn-primary btn-block"><b><i class="fas fa-camera"></i> Upload Profile Picture</b></button>
+                                <button type="button" data-toggle="modal" data-target="#modal-default" class="btn btn-primary btn-block"><b><i class="fas fa-camera"></i> Unggah Foto Profil</b></button>
                                 @endif
                             </div>
                             <!-- /.card-body -->
@@ -49,9 +49,9 @@
                         <div class="card">
                             <div class="card-header p-2">
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Profile</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="#">Profil</a></li>
                                     @if($user_id == Session::get('user_id'))
-                                    <li class="nav-item"><a class="nav-link" href="{{route('profile_setting', 'me')}}">Settings</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{route('profile_setting', 'me')}}">Pengaturan</a></li>
                                     @endif
                                 </ul>
                             </div><!-- /.card-header -->
@@ -62,7 +62,7 @@
                                         <div class="card card-primary">
 
                                             <div class="card-body">
-                                                <strong><i class="fas fa-user mr-1"></i>Name</strong>
+                                                <strong><i class="fas fa-user mr-1"></i>Nama</strong>
 
                                                 <p class="text-muted">
                                                     {{$user->user_name}}
@@ -76,7 +76,7 @@
 
                                                 <hr>
 
-                                                <strong><i class="fas fa-phone mr-1"></i>Phone Number</strong>
+                                                <strong><i class="fas fa-phone mr-1"></i>No Telp</strong>
 
                                                 <p class="text-muted">{{$user->user_phone}}</p>
 
