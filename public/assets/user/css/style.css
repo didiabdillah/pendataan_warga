@@ -1462,9 +1462,9 @@ article.ms-news-detail-page {
 }
 /*---------- Banner CSS ----------*/
 #home-two-bnr {
-    padding: 400px 0 350px 0;
-    background: url('../images/slider-01.png') no-repeat center #2a303a;
-    background-size: cover;
+    padding: 200px 0 50px 0;
+    background: url('../../img/background/landing-banner.png') no-repeat center #2a303a;
+    background-size: auto;
 }
 #home-two-bnr .seperator-line {
     color: #2a303a;

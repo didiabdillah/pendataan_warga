@@ -7,15 +7,13 @@
 @section('page')
 
 <!-- Banner Section -->
-<section id="home-two-bnr" class="position-relative">
+<div class="ms-spacer-60"></div>
+<div class="ms-spacer-60"></div>
+<section class="inner-bnr extra-space">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <p class="seperator-line mb-2">WE PROVIDE</p>
-                <h1 class="hero-text home-two-main-color">Better Service to Protect Virus</h1>
-                <p class="font-weight-bold home-two-main-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since galley of type a type specimen book</p>
-                <div class="ms-spacer-40"></div>
+            <div class="col-12 text-white">
+                <h2 class="hero-text">Waspada Covid-19</h2>
             </div>
         </div>
     </div>
@@ -50,7 +48,7 @@
 </section>
 
 <!-- Symptoms Section -->
-<section id="form" class="pad-100">
+<section id="form" class="pad-50">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

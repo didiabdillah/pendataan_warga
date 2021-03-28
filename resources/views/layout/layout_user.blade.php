@@ -85,13 +85,9 @@
                     <div class="col-md-7 col-lg-6">
                         <div class="contact-info">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <p class="mb-2 ms-title-15">Kontak Darurat</p>
-                                    <h5 class="font-weight-bold mb-0"><a href="tel:+1234567890">+1 234 567 890</a></h5>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="mb-2 ms-title-15">Email Kami</p>
-                                    <h5 class="font-weight-bold mb-0"><a href="mailto:help@coroso.com">help@coroso.com</a></h5>
+                                <div class="col-md-5">
+                                    <p class="mb-2 ms-title-15">Kontak Telp/Fax</p>
+                                    <h5 class="font-weight-bold mb-0"><a href="tel:+1234567890">(0234) 7140259</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +97,7 @@
 
                 <div class="row footer-bottom text-center">
                     <div class="col-md-12">
-                        <p class="text-white">@ Copyright 2020 Coroso. All rights reserved.</p>
+                        <p class="text-white">@ Copyright {{date('Y')}} All rights reserved.</p>
                     </div>
                 </div>
             </div>
