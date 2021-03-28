@@ -55,40 +55,166 @@
                 <h1 class="hero-text">Formulir Laporan</h1>
                 <h4 class="font-weight-bold">Silahkan Isi Formulir Dibawah Ini</h4>
                 <div class="ms-spacer-40"></div>
+
                 <form method="POST" action="{{route('landing_form_process')}}">
                     @csrf
                     <div class="row">
                         <div class="form-group col-12">
-                            <input type="text" name="nik" id="nik">
+                            <input type="text" name="nik" id="nik" class="@error('nik') is-invalid @enderror" value="{{old('nik')}}">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>No. NIK/KTP</label>
+                            @error('nik')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
                         </div>
                         <div class="form-group col-12">
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" class="@error('name') is-invalid @enderror" value="{{old('name')}}">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Nama Lengkap (Sesuai KTP)</label>
+                            @error('name')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
                         </div>
+
                         <div class="form-group col-12">
-                            <select name="sex" id="sex">
-                                <option value="">--Jenis Kelamin--</option>
-                                <option value="0">Laki-Laki</option>
-                                <option value="1">Perempuan</option>
+                            <select name="sex" id="sex" class="@error('sex') is-invalid @enderror">
+                                <option value="">--Pilih Jenis Kelamin--</option>
+                                <option value="0" @if(old('sex')=='0' ) selected @endif>Laki-Laki</option>
+                                <option value="1" @if(old('sex')=='1' ) selected @endif>Perempuan</option>
                             </select>
+                            @error('sex')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
                         </div>
-                        <!-- <div class="form-group col-12">
-                            <input type="text" required="">
+
+                        <div class="form-group col-12">
+                            <input type="text" name="birth_place" id="birth_place" class="@error('birth_place') is-invalid @enderror">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Tempat Lahir</label>
+                            @error('birth_place')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
                         </div>
+
                         <div class="form-group col-12">
-                            <input type="text" required="">
+                            <input type="date" name="birth_date" id="birth_date" class="@error('birth_date') is-invalid @enderror">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Tanggal Lahir</label>
+                            @error('birth_date')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
                         </div>
+
+                        <div class="form-group col-12">
+                            <input type="text" name="address" id="address" class="@error('address') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Alamat</label>
+                            @error('address')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type="text" name="rt" id="rt" class="@error('rt') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>RT</label>
+                            @error('rt')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type="text" name="rw" id="rw" class="@error('rw') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>RW</label>
+                            @error('rw')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type="text" name="phone" id="phone" class="@error('phone') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>No Telephone</label>
+                            @error('phone')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type="text" name="job" id="job" class="@error('job') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Pekerjaan</label>
+                            @error('job')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <select name="province" id="province" class="@error('province') is-invalid @enderror">
+                                <option value="">--Datang Dari Provinsi--</option>
+                                @foreach($provinces as $data)
+                                <option value="{{$data->id}}" @if(old('province')==$data->id ) selected @endif>{{$data->name}}</option>
+                                @endforeach
+                            </select>
+                            @error('province')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <select name="regency" id="regency" class="@error('regency') is-invalid @enderror">
+                                <option value="">--Datang Dari Kabupaten/Kota--</option>
+                                @foreach($regencies as $data)
+                                <option value="{{$data->id}}" @if(old('regency')==$data->id ) selected @endif>{{$data->name}}</option>
+                                @endforeach
+                            </select>
+                            @error('regency')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type=" text" name="duration" id="duration" class="@error('duration') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Lama Di Luar Kota</label>
+                            @error('duration')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <input type=" text" name="purpose" id="purpose" class="@error('purpose') is-invalid @enderror">
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Tujuan Di Luar Kota</label>
+                            @error('purpose')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+
+                        <div class="form-group col-12">
+                            <select name="health_status" id="health_status" class="@error('health_status') is-invalid @enderror">
+                                <option value="">--Kondisi Saat Ini--</option>
+                                <option value="sehat" @if(old('health_status')=='sehat' ) selected @endif>Sehat</option>
+                                <option value="sakit" @if(old('health_status')=='sakit' ) selected @endif>Sakit</option>
+                            </select>
+                            @error('health_status')
+                            <small id="emailHelp" class="form-text text-muted text-danger">{{$message}}</small>
+                            @enderror
+                        </div>
+                        <!-- 
+                      
                         <div class="form-group col-12">
                             <input type="text" required="">
                             <span class="highlight"></span>
@@ -112,8 +238,10 @@
                         </div>
                     </div>
                 </form>
+
             </div>
         </div>
+
     </div>
 </section>
 
@@ -218,6 +346,16 @@
     });
 </script>
 --}}
+
+<!-- Select2 -->
+<script src="{{URL::asset('assets/admin/js/select2/js/select2.full.min.js')}}"></script>
+
+<script>
+    $(function() {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+    });
+</script>
 
 <script>
     // Ajax setup from csrf token

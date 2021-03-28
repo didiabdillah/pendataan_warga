@@ -23,7 +23,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-3 col-md-3">
+
                     <a target="_blank" href="{{route('report_print')}}" class="btn btn-primary btn-md mb-3 btn-block"><i class="fas fa-print"></i> Cetak Laporan</a>
+
+                    {{-- <button type="button" data-toggle="modal" data-target="#modal-default" class="mb-3 btn btn-primary btn-block"><b><i class="fas fa-print"></i> Cetak Laporan</b></button> --}}
                 </div>
                 <!-- /.col -->
             </div>
@@ -50,9 +53,19 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
+                                        <th>Laporan Tanggal</th>
                                         <th>NIK</th>
                                         <th>Nama</th>
                                         <th>Jenis Kelamin</th>
+                                        <th>Tempat Lahir</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Alamat</th>
+                                        <th>No Telp/HP</th>
+                                        <th>Pekerjaan</th>
+                                        <th>Datang Dari</th>
+                                        <th>Lama Di Luar Kota</th>
+                                        <th>Tujuan Di Luar Kota</th>
+                                        <th>Kondisi Saat Ini</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -61,6 +74,7 @@
                                         <td>
                                             {{$loop->iteration}}
                                         </td>
+                                        <td>{{Carbon\Carbon::parse($data->created_at)->isoFormat('D MMMM Y')}}</td>
                                         <td>{{$data->report_nik}}</td>
                                         <td>{{$data->report_name}}</td>
                                         <td>
@@ -70,6 +84,15 @@
                                             {{'Peremmpuan'}}
                                             @endif
                                         </td>
+                                        <td>{{$data->report_birth_place}}</td>
+                                        <td>{{Carbon\Carbon::parse($data->report_birth_date)->isoFormat('D MMMM Y')}}</td>
+                                        <td>{{$data->report_address}}</td>
+                                        <td>{{$data->report_phone}}</td>
+                                        <td>{{$data->report_job}}</td>
+                                        <td>{{$data->regency . ', ' . $data->province}}</td>
+                                        <td>{{$data->report_duration}}</td>
+                                        <td>{{$data->report_purpose}}</td>
+                                        <td>{{$data->report_health_status}}</td>
 
                                     </tr>
                                     @endforeach
@@ -86,6 +109,54 @@
         </section>
     </section>
 </div>
+
+<!-- Upload Profile Picture Modal Form -->
+<!-- <div class="modal fade show" id="modal-default" style="display: block;" aria-modal="true" role="dialog"> -->
+{{-- <div class="modal fade " id="modal-default">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Cetak Laporan</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="{{route('profile_setting_update_picture', 'me')}}" method="POST" enctype="multipart/form-data">
+@csrf
+@method('patch')
+<div class="card-body">
+    <div class="form-group">
+        <label for="image">Picture Upload</label>
+        <div class="input-group  @error('image') is-invalid @enderror">
+            <div class="custom-file">
+                <input type="file" class="custom-file-input  @error('image') is-invalid @enderror" id="image" name="image">
+                <label class="custom-file-label" for="image">Choose file</label>
+            </div>
+        </div>
+        @error('image')
+        <div class="invalid-feedback">
+            {{$message}}
+        </div>
+        @enderror
+    </div>
+</div>
+<!-- /.card-body -->
+
+</div>
+<div class="modal-footer justify-content-between">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+    <button type="submit" class="btn btn-primary">Cetak</button>
+</div>
+</form>
+</div>
+<!-- /.modal-content -->
+</div>
+<!-- /.modal-dialog -->
+</div>
+--}}
+<!-- /.modal -->
+
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
